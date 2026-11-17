@@ -7,19 +7,19 @@ import FadeIn from "./FadeIn";
 const testimonials = [
   {
     quote:
-      "Maison Saveur a transcende notre mariage. Le Chef a su capturer l'essence de notre domaine pour offrir a nos invites un voyage sensoriel inoubliable. L'elegance et la discretion etaient au rendez-vous.",
-    author: "Elise & Marc",
+      "Maison Saveur a transcendé notre mariage. Le Chef a su capturer l'essence de notre domaine pour offrir à nos invités un voyage sensoriel inoubliable. L'élégance et la discrétion étaient au rendez-vous.",
+    author: "Élise & Marc",
     occasion: "Mariage au Domaine de Verchant",
   },
   {
     quote:
-      "Un diner d'exception dans notre mas. Chaque assiette racontait une histoire, chaque saveur etait une decouverte. Une soiree gravee dans nos memoires.",
+      "Un dîner d'exception dans notre mas. Chaque assiette racontait une histoire, chaque saveur était une découverte. Une soirée gravée dans nos mémoires.",
     author: "Philippe & Nathalie",
-    occasion: "Diner prive a Uzes",
+    occasion: "Dîner privé à Uzès",
   },
   {
     quote:
-      "Le brunch organise pour notre anniversaire de mariage fut un moment de pure grace. Des produits sublimes, un service impeccable.",
+      "Le brunch organisé pour notre anniversaire de mariage fut un moment de pure grâce. Des produits sublimes, un service impeccable.",
     author: "Sophie & Antoine",
     occasion: "Brunch au Pont du Gard",
   },
@@ -41,7 +41,7 @@ export default function Temoignages() {
         <FadeIn>
           <div className="w-px h-16 bg-primary mx-auto mb-12" />
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-tertiary-fixed mb-12">
-            Leurs experiences
+            Leurs expériences
           </p>
         </FadeIn>
 
@@ -61,7 +61,7 @@ export default function Temoignages() {
             <button
               onClick={prev}
               className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/50 transition-colors"
-              aria-label="Precedent"
+              aria-label="Précédent"
             >
               <ChevronLeft size={18} />
             </button>

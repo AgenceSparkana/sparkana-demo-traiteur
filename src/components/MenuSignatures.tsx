@@ -3,27 +3,27 @@ import FadeIn from "./FadeIn";
 
 const dishes = [
   {
-    name: "Mijote d'agneau au thym de garrigue",
+    name: "Mijoté d'agneau au thym de garrigue",
     image: "/images/agneau-garrigue.png",
     className: "md:col-span-2 md:row-span-1",
   },
   {
-    name: "Legumes oublies en textures",
+    name: "Légumes oubliés en textures",
     image: "/images/legumes-textures.png",
     className: "md:col-span-1 md:row-span-1",
   },
   {
-    name: "Souffle a la lavande et miel du Gard",
+    name: "Soufflé à la lavande et miel du Gard",
     image: "/images/souffle-lavande.png",
     className: "md:col-span-1 md:row-span-2",
   },
   {
-    name: "Loup de Mediterranee, emulsion d'agrumes",
+    name: "Loup de Méditerranée, émulsion d'agrumes",
     image: "/images/loup-mediterranee.png",
     className: "md:col-span-1 md:row-span-1",
   },
   {
-    name: "Le jardin d'ete en canapes",
+    name: "Le jardin d'été en canapés",
     image: "/images/canapes-jardin.png",
     className: "md:col-span-2 md:row-span-1",
   },

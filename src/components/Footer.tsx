@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="w-8 h-px bg-primary/40 mb-4" />
             <p className="font-sans text-xs text-white/40">
               &copy; {new Date().getFullYear()} Maison Saveur. Tous droits
-              reserves.
+              réservés.
             </p>
           </div>
 
@@ -34,13 +34,13 @@ export default function Footer() {
                 href="#"
                 className="font-sans text-sm text-white/70 hover:text-white transition-colors"
               >
-                Mentions legales
+                Mentions légales
               </Link>
               <Link
                 href="#"
                 className="font-sans text-sm text-white/70 hover:text-white transition-colors"
               >
-                Confidentialite
+                Confidentialité
               </Link>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
           <p className="font-sans text-xs text-white/30">
-            Site realise par{" "}
+            Site réalisé par{" "}
             <a
               href="https://sparkana.fr"
               target="_blank"

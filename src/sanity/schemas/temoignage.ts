@@ -1,6 +1,6 @@
 const temoignage = {
   name: "temoignage",
-  title: "Temoignage",
+  title: "Témoignage",
   type: "document",
   fields: [
     {

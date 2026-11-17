@@ -9,19 +9,19 @@ export async function POST(req: Request) {
     prestige: "7 services avec accords vins (145/pers)",
   };
 
-  const prompt = `Tu es le Chef de Maison Saveur, chef gastronomique prive dans le Gard, Occitanie.
+  const prompt = `Tu es le Chef de Maison Saveur, chef gastronomique privé dans le Gard, Occitanie.
 
-Genere un menu gastronomique pour :
+Génère un menu gastronomique pour :
 - Occasion : ${occasion}
 - Contraintes alimentaires : ${contrainte}
 - Formule : ${budgetLabels[budget] || "5 services"}
 
-Format de reponse STRICT — uniquement ce format, rien d'autre :
+Format de réponse STRICT, uniquement ce format, rien d'autre :
 
 **Amuse-bouche**
-[description courte et poetique]
+[description courte et poétique]
 
-**Entree**
+**Entrée**
 [description]
 
 **Poisson** (si 5 ou 7 services)
@@ -30,14 +30,14 @@ Format de reponse STRICT — uniquement ce format, rien d'autre :
 **Viande**
 [description]
 
-**Pre-dessert** (si 7 services)
+**Pré-dessert** (si 7 services)
 [description]
 
 **Dessert**
 [description]
 
-Utilise des produits du terroir gardois et mediterraneen.
-Langage poetique et gastronomique.
+Utilise des produits du terroir gardois et méditerranéen.
+Langage poétique et gastronomique.
 Pas d'introduction ni de conclusion.`;
 
   try {
@@ -60,7 +60,7 @@ Pas d'introduction ni de conclusion.`;
 
     if (!menu) {
       return NextResponse.json(
-        { error: "Generation impossible" },
+        { error: "Génération impossible" },
         { status: 500 }
       );
     }
@@ -68,7 +68,7 @@ Pas d'introduction ni de conclusion.`;
     return NextResponse.json({ menu });
   } catch {
     return NextResponse.json(
-      { error: "Generation impossible" },
+      { error: "Génération impossible" },
       { status: 500 }
     );
   }

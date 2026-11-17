@@ -26,23 +26,23 @@ export default function Chef() {
                 Le visage de Maison Saveur
               </p>
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-on-surface leading-tight mb-10">
-                Une signature nee
+                Une signature née
                 <br />
-                au coeur du terroir.
+                au cœur du terroir.
               </h2>
             </FadeIn>
 
             <FadeIn delay={150}>
               <p className="font-sans font-light text-lg text-on-surface-variant leading-relaxed mb-6">
-                Apres quinze annees d&apos;excellence au sein de maisons
-                etoilees au Michelin, le Chef a choisi de revenir aux sources,
-                la ou le soleil de Provence sublime chaque produit.
+                Après quinze années d&apos;excellence au sein de maisons
+                étoilées au Michelin, le Chef a choisi de revenir aux sources,
+                là où le soleil de Provence sublime chaque produit.
               </p>
               <p className="font-sans font-light text-lg text-on-surface-variant leading-relaxed mb-10">
-                Son approche celebre le Gard et ses producteurs passionnes.
+                Son approche célèbre le Gard et ses producteurs passionnés.
                 Chaque menu est une narration gustative, un dialogue entre la
-                technique rigoureuse de la haute gastronomie et la spontaneite
-                des marches locaux.
+                technique rigoureuse de la haute gastronomie et la spontanéité
+                des marchés locaux.
               </p>
             </FadeIn>
 
@@ -50,8 +50,8 @@ export default function Chef() {
               <blockquote className="border-l-2 border-primary/30 pl-6">
                 <p className="font-serif italic text-xl md:text-2xl text-on-surface leading-relaxed">
                   &laquo;&nbsp;La cuisine n&apos;est pas une simple affaire de
-                  gout, c&apos;est un moment de partage absolu ou le temps
-                  s&apos;arrete.&nbsp;&raquo;
+                  goût, c&apos;est un moment de partage absolu où le temps
+                  s&apos;arrête.&nbsp;&raquo;
                 </p>
               </blockquote>
             </FadeIn>

@@ -11,16 +11,16 @@ import {
 
 const occasions = [
   { id: "anniversaire", label: "Anniversaire", icon: "gift" },
-  { id: "mariage", label: "Mariage / Fiancailles", icon: "heart" },
-  { id: "professionnel", label: "Diner professionnel", icon: "briefcase" },
-  { id: "romantique", label: "Soiree romantique", icon: "flame" },
-  { id: "famille", label: "Reunion de famille", icon: "users" },
+  { id: "mariage", label: "Mariage / Fiançailles", icon: "heart" },
+  { id: "professionnel", label: "Dîner professionnel", icon: "briefcase" },
+  { id: "romantique", label: "Soirée romantique", icon: "flame" },
+  { id: "famille", label: "Réunion de famille", icon: "users" },
   { id: "autre", label: "Autre occasion", icon: "sparkles" },
 ];
 
 const contraintes = [
   { id: "aucune", label: "Aucune contrainte" },
-  { id: "vegetarien", label: "Vegetarien" },
+  { id: "vegetarien", label: "Végétarien" },
   { id: "vegan", label: "Vegan" },
   { id: "sans-gluten", label: "Sans gluten" },
   { id: "halal", label: "Halal" },
@@ -34,22 +34,22 @@ const budgets = [
 ];
 
 const FALLBACK_MENU = `**Amuse-bouche**
-Veloute de courgette au basilic, tuile parmesan
+Velouté de courgette au basilic, tuile parmesan
 
-**Entree**
-Carpaccio de Saint-Jacques, emulsion citron caviar, huile d'olive des Alpilles
+**Entrée**
+Carpaccio de Saint-Jacques, émulsion citron caviar, huile d'olive des Alpilles
 
 **Poisson**
-Filet de loup en croute d'herbes, risotto cremeux aux cepes, jus de crustaces
+Filet de loup en croûte d'herbes, risotto crémeux aux cèpes, jus de crustacés
 
 **Viande**
-Agneau des Causses roti, jus aux herbes de garrigue, legumes confits du marche
+Agneau des Causses rôti, jus aux herbes de garrigue, légumes confits du marché
 
-**Pre-dessert**
-Granite de verveine, sorbet citron vert
+**Pré-dessert**
+Granité de verveine, sorbet citron vert
 
 **Dessert**
-Millefeuille revisite a la lavande, creme legere vanille Bourbon`;
+Millefeuille revisité à la lavande, crème légère vanille Bourbon`;
 
 export default function GenerateurMenu() {
   const [step, setStep] = useState(0);
@@ -92,14 +92,14 @@ export default function GenerateurMenu() {
           <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 px-4 py-2 mb-6">
             <Sparkles size={14} className="text-tertiary-fixed" />
             <span className="text-tertiary-fixed text-[10px] tracking-[0.3em] uppercase font-bold">
-              Propulse par l&apos;IA
+              Propulsé par l&apos;IA
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-serif italic text-white mb-4">
             Votre menu sur mesure
           </h2>
           <p className="text-outline text-sm">
-            Decrivez votre soiree, notre IA compose votre menu gastronomique en 5 secondes.
+            Décrivez votre soirée, notre IA compose votre menu gastronomique en 5 secondes.
           </p>
         </div>
 
@@ -111,17 +111,17 @@ export default function GenerateurMenu() {
                 <UtensilsCrossed size={36} className="text-primary" />
               </div>
               <h3 className="font-serif text-2xl text-on-surface mb-4">
-                Creez votre menu ideal
+                Créez votre menu idéal
               </h3>
               <p className="text-on-surface-variant mb-8 max-w-sm mx-auto">
-                3 questions / 5 secondes / Un menu gastronomique personnalise
+                3 questions / 5 secondes / Un menu gastronomique personnalisé
               </p>
               <button
                 onClick={() => setStep(1)}
                 className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-primary-container transition-colors group"
               >
                 <Sparkles size={16} />
-                Generer mon menu
+                Générer mon menu
                 <ChevronRight
                   size={16}
                   className="group-hover:translate-x-1 transition-transform"
@@ -134,7 +134,7 @@ export default function GenerateurMenu() {
           {step === 1 && (
             <div className="animate-fade-in">
               <p className="text-[10px] tracking-[0.3em] uppercase text-outline mb-2">
-                Etape 1 sur 3
+                Étape 1 sur 3
               </p>
               <h3 className="font-serif text-xl text-on-surface mb-6">
                 Quelle est l&apos;occasion ?
@@ -163,7 +163,7 @@ export default function GenerateurMenu() {
           {step === 2 && (
             <div className="animate-fade-in">
               <p className="text-[10px] tracking-[0.3em] uppercase text-outline mb-2">
-                Etape 2 sur 3
+                Étape 2 sur 3
               </p>
               <h3 className="font-serif text-xl text-on-surface mb-6">
                 Contraintes alimentaires ?
@@ -195,7 +195,7 @@ export default function GenerateurMenu() {
           {step === 3 && (
             <div className="animate-fade-in">
               <p className="text-[10px] tracking-[0.3em] uppercase text-outline mb-2">
-                Etape 3 sur 3
+                Étape 3 sur 3
               </p>
               <h3 className="font-serif text-xl text-on-surface mb-6">
                 Votre budget ?
@@ -242,8 +242,8 @@ export default function GenerateurMenu() {
                   </div>
                   <div className="space-y-2 max-w-xs mx-auto">
                     {[
-                      "Analyse de vos preferences...",
-                      "Selection des produits de saison...",
+                      "Analyse de vos préférences...",
+                      "Sélection des produits de saison...",
                       "Composition des accords...",
                     ].map((txt, i) => (
                       <div
@@ -262,7 +262,7 @@ export default function GenerateurMenu() {
                     <div className="flex items-center gap-2">
                       <Sparkles size={16} className="text-primary" />
                       <span className="text-xs tracking-widest uppercase text-primary font-bold">
-                        Menu genere par IA
+                        Menu généré par IA
                       </span>
                     </div>
                     <button
@@ -304,7 +304,7 @@ export default function GenerateurMenu() {
                       href="#contact"
                       className="shrink-0 bg-primary text-white px-6 py-3 text-xs tracking-widest uppercase font-bold hover:bg-primary-container transition-colors flex items-center gap-2"
                     >
-                      Reserver avec ce menu
+                      Réserver avec ce menu
                       <ChevronRight size={14} />
                     </a>
                   </div>

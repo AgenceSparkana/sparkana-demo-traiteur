@@ -4,21 +4,21 @@ import FadeIn from "./FadeIn";
 
 const services = [
   {
-    title: "Diner Prive",
+    title: "Dîner Privé",
     description:
-      "Un menu gastronomique en plusieurs temps servi dans l'intimite de votre demeure.",
+      "Un menu gastronomique en plusieurs temps servi dans l'intimité de votre demeure.",
     image: "/images/diner-prive.png",
   },
   {
-    title: "Cocktail Reception",
+    title: "Cocktail Réception",
     description:
-      "Bouchees creatives et accords mets-vins pour vos celebrations les plus exclusives.",
+      "Bouchées créatives et accords mets-vins pour vos célébrations les plus exclusives.",
     image: "/images/cocktail-reception.png",
   },
   {
-    title: "Brunch & Dejeuner",
+    title: "Brunch & Déjeuner",
     description:
-      "Le charme des matinees ensoleillees. Une cuisine genereuse et raffinee au fil des saisons.",
+      "Le charme des matinées ensoleillées. Une cuisine généreuse et raffinée au fil des saisons.",
     image: "/images/brunch-terrasse.png",
   },
 ];
@@ -29,7 +29,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6">
         <FadeIn>
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-primary mb-4">
-            Collection d&apos;experiences
+            Collection d&apos;expériences
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-on-surface leading-tight max-w-2xl mb-16">
             Des moments suspendus,

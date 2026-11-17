@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { Calendar, Clock } from "lucide-react";
 
 const MOIS_NOMS = [
-  "janvier", "fevrier", "mars", "avril",
-  "mai", "juin", "juillet", "aout",
-  "septembre", "octobre", "novembre", "decembre",
+  "janvier", "février", "mars", "avril",
+  "mai", "juin", "juillet", "août",
+  "septembre", "octobre", "novembre", "décembre",
 ];
 
 export default function CompteurExclusivite() {
@@ -54,7 +54,7 @@ export default function CompteurExclusivite() {
         <Calendar size={16} className="text-white/60 shrink-0" />
         <span className="text-white/80 text-xs tracking-widest uppercase">
           Le Chef accepte{" "}
-          <span className="text-white font-bold">{totalSlots} evenements</span> par mois
+          <span className="text-white font-bold">{totalSlots} événements</span> par mois
         </span>
       </div>
 
@@ -91,7 +91,7 @@ export default function CompteurExclusivite() {
       <div className="flex items-center gap-2">
         <Clock size={14} className="text-white/60 shrink-0" />
         <span className="text-white/60 text-xs tracking-wider">
-          Reponse sous <span className="text-white font-semibold">24h</span>
+          Réponse sous <span className="text-white font-semibold">24h</span>
         </span>
       </div>
     </div>

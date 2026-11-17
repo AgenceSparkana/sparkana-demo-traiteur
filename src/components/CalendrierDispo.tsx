@@ -19,9 +19,9 @@ interface DispoStats {
 }
 
 const MOIS = [
-  "Janvier", "Fevrier", "Mars", "Avril",
-  "Mai", "Juin", "Juillet", "Aout",
-  "Septembre", "Octobre", "Novembre", "Decembre",
+  "Janvier", "Février", "Mars", "Avril",
+  "Mai", "Juin", "Juillet", "Août",
+  "Septembre", "Octobre", "Novembre", "Décembre",
 ];
 
 const JOURS = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
@@ -105,8 +105,8 @@ export default function CalendrierDispo() {
     if (dispo === "complet") return;
     setSelectedDate(date);
     const messages: Record<string, string> = {
-      disponible: "Le Chef est disponible - Reservez avant qu'il ne parte !",
-      "derniere-place": "Derniere disponibilite - Plus que 1 place",
+      disponible: "Le Chef est disponible - Réservez avant qu'il ne parte !",
+      "derniere-place": "Dernière disponibilité - Plus que 1 place",
     };
     setMessage(messages[dispo]);
   };
@@ -135,15 +135,15 @@ export default function CalendrierDispo() {
         <FadeIn>
           <div className="text-center mb-12">
             <p className="text-primary text-xs tracking-[0.3em] uppercase font-bold mb-3">
-              Disponibilites
+              Disponibilités
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-on-surface mb-3">
-              Reservez votre soiree
+              Réservez votre soirée
             </h2>
             <p className="text-on-surface-variant text-sm">
               Le Chef accepte{" "}
               <span className="font-bold text-primary">
-                {stats.totalSlots} evenements par mois
+                {stats.totalSlots} événements par mois
               </span>
               {" "}/{" "}
               <span className="font-bold text-primary">
@@ -221,7 +221,7 @@ export default function CalendrierDispo() {
             <div className="flex items-center gap-6 mt-6 pt-6 border-t border-outline-variant/30">
               {[
                 { color: "bg-[#1a3a2a]", label: "Disponible" },
-                { color: "bg-[#3a2a1a]", label: "Derniere place" },
+                { color: "bg-[#3a2a1a]", label: "Dernière place" },
                 { color: "bg-surface-container-highest", label: "Complet" },
               ].map(({ color, label }) => (
                 <div key={label} className="flex items-center gap-2">
@@ -243,7 +243,7 @@ export default function CalendrierDispo() {
               href="#contact"
               className="shrink-0 bg-primary text-white px-5 py-2 text-xs tracking-widest uppercase font-bold hover:bg-primary-container transition-colors"
             >
-              Reserver
+              Réserver
             </a>
           </div>
         )}

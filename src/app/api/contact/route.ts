@@ -22,16 +22,16 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: "Maison Saveur <onboarding@resend.dev>",
       to: emailTo,
-      subject: `Nouvelle demande de reservation - ${type}`,
+      subject: `Nouvelle demande de réservation - ${type}`,
       html: `
-        <h2>Nouvelle demande de reservation</h2>
+        <h2>Nouvelle demande de réservation</h2>
         <table style="border-collapse:collapse;width:100%;max-width:500px;">
           <tr>
             <td style="padding:8px;border-bottom:1px solid #dcc1b5;font-weight:bold;color:#99420d;">Type</td>
             <td style="padding:8px;border-bottom:1px solid #dcc1b5;">${type}</td>
           </tr>
           <tr>
-            <td style="padding:8px;border-bottom:1px solid #dcc1b5;font-weight:bold;color:#99420d;">Invites</td>
+            <td style="padding:8px;border-bottom:1px solid #dcc1b5;font-weight:bold;color:#99420d;">Invités</td>
             <td style="padding:8px;border-bottom:1px solid #dcc1b5;">${guests}</td>
           </tr>
           <tr>

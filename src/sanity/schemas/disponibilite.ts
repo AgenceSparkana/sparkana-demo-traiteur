@@ -1,6 +1,6 @@
 const disponibilite = {
   name: "disponibilite",
-  title: "Disponibilite",
+  title: "Disponibilité",
   type: "document",
   fields: [
     {
@@ -15,7 +15,7 @@ const disponibilite = {
       options: {
         list: [
           { title: "Disponible", value: "disponible" },
-          { title: "Derniere place", value: "derniere-place" },
+          { title: "Dernière place", value: "derniere-place" },
           { title: "Complet", value: "complet" },
         ],
       },

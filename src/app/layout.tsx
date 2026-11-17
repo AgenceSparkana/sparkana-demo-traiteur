@@ -18,9 +18,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Maison Saveur — Chef a domicile & Traiteur Premium | Gard",
+  title: "Maison Saveur | Chef à domicile & Traiteur Premium | Gard",
   description:
-    "Experiences gastronomiques intimes a domicile, mas et domaines viticoles du Gard. Diners prives, cocktails reception, brunchs sur mesure.",
+    "Expériences gastronomiques intimes à domicile, mas et domaines viticoles du Gard. Dîners privés, cocktails réception, brunchs sur mesure.",
 };
 
 export default function RootLayout({

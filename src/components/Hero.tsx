@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="pb-24 pl-8 pr-8 md:pl-24 max-w-3xl">
           <FadeIn>
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-tertiary-fixed opacity-80 mb-6">
-              Gastronomie privee
+              Gastronomie privée
             </p>
           </FadeIn>
           <FadeIn delay={150}>
@@ -29,7 +29,7 @@ export default function Hero() {
           </FadeIn>
           <FadeIn delay={300}>
             <p className="font-sans font-light text-lg md:text-xl text-white/70 mb-10 max-w-xl">
-              Experiences gastronomiques intimes a domicile, mas et domaines
+              Expériences gastronomiques intimes à domicile, mas et domaines
               viticoles du Gard.
             </p>
           </FadeIn>
@@ -39,7 +39,7 @@ export default function Hero() {
                 href="#services"
                 className="inline-block bg-primary text-white font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300"
               >
-                Decouvrir l&apos;experience
+                Découvrir l&apos;expérience
               </Link>
               <Link
                 href="#menu"

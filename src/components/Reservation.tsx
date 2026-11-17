@@ -45,10 +45,10 @@ export default function Reservation() {
           <div className="bg-surface-container-highest p-8 md:p-12 lg:p-20">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl md:text-4xl text-on-surface mb-4">
-                Reserver votre instant.
+                Réserver votre instant.
               </h2>
               <p className="font-sans font-light text-on-surface-variant">
-                Disponibilites limitees pour garantir l&apos;excellence.
+                Disponibilités limitées pour garantir l&apos;excellence.
               </p>
             </div>
 
@@ -56,7 +56,7 @@ export default function Reservation() {
               {/* Type */}
               <div className="flex flex-col gap-2">
                 <label className="font-sans text-xs tracking-[0.2em] uppercase text-primary font-bold">
-                  Type d&apos;evenement
+                  Type d&apos;événement
                 </label>
                 <select
                   name="type"
@@ -64,17 +64,17 @@ export default function Reservation() {
                   className="bg-transparent border-b border-outline-variant pb-2 font-sans text-on-surface focus:border-primary focus:outline-none transition-colors"
                 >
                   <option value="">Choisir...</option>
-                  <option value="diner">Diner Gastronomique</option>
-                  <option value="cocktail">Cocktail Reception</option>
+                  <option value="diner">Dîner Gastronomique</option>
+                  <option value="cocktail">Cocktail Réception</option>
                   <option value="brunch">Brunch Signature</option>
-                  <option value="pro">Evenement Professionnel</option>
+                  <option value="pro">Événement Professionnel</option>
                 </select>
               </div>
 
               {/* Guests */}
               <div className="flex flex-col gap-2">
                 <label className="font-sans text-xs tracking-[0.2em] uppercase text-primary font-bold">
-                  Nombre d&apos;invites
+                  Nombre d&apos;invités
                 </label>
                 <select
                   name="guests"
@@ -92,7 +92,7 @@ export default function Reservation() {
               {/* Date */}
               <div className="flex flex-col gap-2">
                 <label className="font-sans text-xs tracking-[0.2em] uppercase text-primary font-bold">
-                  Date souhaitee
+                  Date souhaitée
                 </label>
                 <input
                   type="date"
@@ -105,7 +105,7 @@ export default function Reservation() {
               {/* Contact */}
               <div className="flex flex-col gap-2">
                 <label className="font-sans text-xs tracking-[0.2em] uppercase text-primary font-bold">
-                  Email ou Telephone
+                  Email ou Téléphone
                 </label>
                 <input
                   type="text"
@@ -124,7 +124,7 @@ export default function Reservation() {
                 <textarea
                   name="message"
                   rows={4}
-                  placeholder="Parlez-nous de votre evenement, vos envies, vos contraintes..."
+                  placeholder="Parlez-nous de votre événement, vos envies, vos contraintes..."
                   className="bg-transparent border-b border-outline-variant pb-2 font-sans text-on-surface placeholder:text-outline focus:border-primary focus:outline-none transition-colors resize-none"
                 />
               </div>
@@ -139,18 +139,18 @@ export default function Reservation() {
                   <Send size={14} />
                   {status === "loading"
                     ? "Envoi en cours..."
-                    : "Envoyer ma demande de reservation"}
+                    : "Envoyer ma demande de réservation"}
                 </button>
 
                 {status === "success" && (
                   <p className="text-center mt-4 font-sans text-sm text-primary">
-                    Votre demande a bien ete envoyee. Le chef vous recontactera
+                    Votre demande a bien été envoyée. Le chef vous recontactera
                     sous 24h pour personnaliser votre menu.
                   </p>
                 )}
                 {status === "error" && (
                   <p className="text-center mt-4 font-sans text-sm text-red-600">
-                    Une erreur est survenue. Veuillez reessayer.
+                    Une erreur est survenue. Veuillez réessayer.
                   </p>
                 )}
 

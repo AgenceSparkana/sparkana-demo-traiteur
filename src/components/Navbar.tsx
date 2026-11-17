@@ -56,7 +56,7 @@ export default function Navbar() {
             <div className="w-8 h-px bg-primary/40 mx-auto mt-1.5" />
           </div>
 
-          {/* Right links + Reserver */}
+          {/* Right links + Réserver */}
           <div className="flex items-center justify-end gap-8">
             {navLinks.slice(2).map((link) => (
               <Link
@@ -71,7 +71,7 @@ export default function Navbar() {
               href="#contact"
               className="text-[10px] tracking-[0.3em] uppercase text-on-surface-variant hover:text-primary border-b border-primary/40 pb-0.5 transition-colors duration-300"
             >
-              Reserver
+              Réserver
             </Link>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="text-[10px] tracking-[0.3em] uppercase text-on-surface-variant border-b border-primary/40 pb-0.5"
             >
-              Reserver
+              Réserver
             </Link>
           </div>
         )}

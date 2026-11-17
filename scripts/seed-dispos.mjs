@@ -13,27 +13,27 @@ const client = createClient({
 const dispos = [
   // Jours complets (deja reserves)
   { date: "2026-03-07", statut: "complet", note: "Mariage famille Dupont" },
-  { date: "2026-03-08", statut: "complet", note: "Cocktail entreprise Nimes" },
-  { date: "2026-03-14", statut: "complet", note: "Diner prive - 12 couverts" },
+  { date: "2026-03-08", statut: "complet", note: "Cocktail entreprise Nîmes" },
+  { date: "2026-03-14", statut: "complet", note: "Dîner privé - 12 couverts" },
   { date: "2026-03-15", statut: "complet", note: "Brunch domaine viticole" },
-  { date: "2026-03-21", statut: "complet", note: "Evenement professionnel" },
+  { date: "2026-03-21", statut: "complet", note: "Événement professionnel" },
 
   // Derniere place (presque complet)
   { date: "2026-03-28", statut: "derniere-place", note: "1 place restante" },
   { date: "2026-03-29", statut: "derniere-place", note: "" },
 
   // Avril 2026 - quelques dates
-  { date: "2026-04-04", statut: "complet", note: "Mariage reserve" },
-  { date: "2026-04-05", statut: "complet", note: "Reception privee" },
+  { date: "2026-04-04", statut: "complet", note: "Mariage réservé" },
+  { date: "2026-04-05", statut: "complet", note: "Réception privée" },
   { date: "2026-04-11", statut: "derniere-place", note: "" },
-  { date: "2026-04-12", statut: "complet", note: "Brunch Paques" },
+  { date: "2026-04-12", statut: "complet", note: "Brunch Pâques" },
   { date: "2026-04-18", statut: "derniere-place", note: "" },
   { date: "2026-04-25", statut: "complet", note: "Cocktail anniversaire" },
-  { date: "2026-04-26", statut: "complet", note: "Diner gastronomique" },
+  { date: "2026-04-26", statut: "complet", note: "Dîner gastronomique" },
 ];
 
 async function seed() {
-  console.log("Seeding disponibilites...");
+  console.log("Seeding disponibilités...");
 
   for (const d of dispos) {
     try {
